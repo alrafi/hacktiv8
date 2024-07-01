@@ -1,0 +1,34 @@
+.main-content {
+  padding: 24px 0;
+}
+.info-container {
+  padding: 24px 32px;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+.info-wrapper {
+  border-left: 1px solid #e3e3e3;
+  padding-left: 20px;
+}
+.info-title {
+  font-weight: bold;
+  width: 100px;
+}
+.info-item {
+  display: flex;
+  font-size: 14px;
+}
+.w-full {
+  width: 100%;
+}
+.name {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+.title {
+  margin: 8px 0;
+  font-size: 14px;
+}
