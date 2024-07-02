@@ -55,52 +55,52 @@
       <div class="container main-content">
         <div class="bg-light mb-4">
           <div class="row info-container">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 center-avatar">
               <img
                 src="./images/dev.jpeg"
                 alt=""
                 class="rounded-circle avatar"
               />
             </div>
-            <div class="col-12 col-md-3">
-              <p class="name">Hafis Irsal</p>
-              <p class="title">Frontend Engineer</p>
+            <div class="col-12 col-md-3 center-info">
+              <p id="name" class="name value">Hafis Irsal</p>
+              <p class="title value">Frontend Engineer</p>
               <div>
-                <button class="btn btn-success">Contact</button>
-                <button class="btn btn-secondary">Resume</button>
+                <button id="edit" class="btn btn-success px-4">Edit</button>
+                <button id="resume" class="btn btn-secondary">Resume</button>
               </div>
             </div>
-            <div class="col-12 col-md-6 info-wrapper">
+            <div class="col-12 col-md-6 info-wrapper center-detail">
               <div class="info-item">
                 <p class="info-title">Availability</p>
-                <p>Full Time</p>
+                <p class="info-value value">Full Time</p>
               </div>
               <div class="info-item">
                 <p class="info-title">Age</p>
-                <p>25</p>
+                <p class="info-value value">25</p>
               </div>
               <div class="info-item">
                 <p class="info-title">Location</p>
-                <p>Jakarta, Indonesia</p>
+                <p class="info-value value">Jakarta, Indonesia</p>
               </div>
               <div class="info-item">
                 <p class="info-title">Experience</p>
-                <p>3</p>
+                <p class="info-value value">3</p>
               </div>
               <div class="info-item">
                 <p class="info-title">Email</p>
-                <p>hafisalrafi@gmail.com</p>
+                <p class="info-value value">hafisalrafi@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
         <div class="bg-light p-3">
           <div class="mb-4">
-            <label for="name" class="form-label">Name</label>
+            <label for="form_name" class="form-label">Name</label>
             <input
               type="text"
-              class="form-control"
-              id="name"
+              class="form-control form-value"
+              id="form_name"
               placeholder="Your Name"
             />
           </div>
@@ -108,7 +108,7 @@
             <label for="role" class="form-label">Role</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-value"
               id="role"
               placeholder="Your Role"
             />
@@ -117,7 +117,7 @@
             <label for="availability" class="form-label">Availability</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-value"
               id="availability"
               placeholder="Your Availability"
             />
@@ -126,7 +126,7 @@
             <label for="age" class="form-label">Age</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-value"
               id="age"
               placeholder="Your Age"
             />
@@ -135,7 +135,7 @@
             <label for="location" class="form-label">Location</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-value"
               id="location"
               placeholder="Your Location"
             />
@@ -144,7 +144,7 @@
             <label for="experience" class="form-label">Years Experience</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control form-value"
               id="experience"
               placeholder="Your Experience"
             />
@@ -153,18 +153,22 @@
             <label for="email" class="form-label">Email</label>
             <input
               type="email"
-              class="form-control"
+              class="form-control form-value"
               id="email"
               placeholder="Your Email"
+              value=""
             />
           </div>
           <div class="w-full">
-            <button class="btn btn-success w-full">Submit</button>
+            <button id="submit" class="btn btn-success w-full" disabled="true">
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
